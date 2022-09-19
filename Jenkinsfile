@@ -8,6 +8,7 @@ pipeline
 		{
 			steps
 			{
+				sh "echo slalam"
 				sh "go build main.go"
 			}
 		}
