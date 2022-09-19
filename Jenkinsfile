@@ -3,7 +3,7 @@ pipeline
 	agent any
 	tools
 	{
-        	go 'go-1.13'
+        	go 'test'
         }
 	environment 
 	{
