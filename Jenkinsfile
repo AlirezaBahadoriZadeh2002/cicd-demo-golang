@@ -1,7 +1,6 @@
 pipeline
 {
 	agent any
-	tools { go 'test' }
 	stages
 	{
 		stage('Build')
