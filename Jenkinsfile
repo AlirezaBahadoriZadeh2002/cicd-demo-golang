@@ -1,11 +1,7 @@
 pipeline
 {
 	agent any
-	environment 
-	{
-        	GO111MODULE = 'on'
-        }
-	
+	tools { go 'test' }
 	stages
 	{
 		stage('Build')
