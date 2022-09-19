@@ -10,12 +10,13 @@ import (
 )
 
 func main() {
-	r := mux.NewRouter()
-	r.HandleFunc("/", Output)
-	http.Handle("/", r)
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
                 fmt.Fprintf(w, "Hello World")
         })
+	r := mux.NewRouter()
+	r.HandleFunc("/", Output)
+	http.Handle("/", r)
+	
 
 
 	// Bind to a port and pass our router in
