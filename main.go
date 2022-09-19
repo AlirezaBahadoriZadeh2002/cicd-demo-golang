@@ -10,9 +10,7 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-                fmt.Fprintf(w, "Hello World")
-        })
+	
 	r := mux.NewRouter()
 	r.HandleFunc("/", Output)
 	http.Handle("/", r)
@@ -26,6 +24,9 @@ func main() {
 // Output generates numbers randomly
 func Output(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
+	
+        fmt.Fprintf(w, "Hello World")
+
 	fmt.Fprintf(w, "Random number is : %v", randomNumbers())
 }
 
