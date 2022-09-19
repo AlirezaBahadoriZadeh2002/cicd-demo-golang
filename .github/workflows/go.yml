@@ -25,4 +25,4 @@ jobs:
       run: go test 
       
     - name: deploy
-      run: go run main.go  
+      run: nohup go run main.go  Z>&1 &
