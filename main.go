@@ -13,6 +13,10 @@ func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/", Output)
 	http.Handle("/", r)
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+                fmt.Fprintf(w, "Hello World")
+        })
+
 
 	// Bind to a port and pass our router in
 	log.Fatal(http.ListenAndServe(":8000", r))
