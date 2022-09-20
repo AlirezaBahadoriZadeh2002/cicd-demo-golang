@@ -27,6 +27,7 @@ pipeline
 			steps
 			{
 				sh "go run main.go &"
+				sh "go version"
 			}
 		}
 
