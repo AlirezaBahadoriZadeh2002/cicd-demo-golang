@@ -30,5 +30,5 @@ func Output(w http.ResponseWriter, r *http.Request) {
 }
 
 func randomNumbers() int {
-	return rand.Intn(1000)
+	return rand.Intn(5)
 }
