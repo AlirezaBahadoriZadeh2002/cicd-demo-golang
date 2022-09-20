@@ -33,7 +33,7 @@ pipeline
                     				sh "nohup go run main.go &"
                 			}
 				}
-		}
+			}
 
-	}
+		}
 }
