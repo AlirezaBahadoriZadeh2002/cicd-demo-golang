@@ -25,7 +25,8 @@ func main() {
 func Output(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 	
-	fmt.Fprintf(w, "aaatttttttttttttttttttttttttttttttttttttttttttttttttttt : %v", randomNumbers())
+	fmt.Fprintf(w, "Number : %v", randomNumbers())
+	fmt.Fprintf(w, "version 0.0.0")
 }
 
 func randomNumbers() int {
