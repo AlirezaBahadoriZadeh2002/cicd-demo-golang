@@ -26,7 +26,7 @@ pipeline
 		{
 			steps
 			{
-				sh " go run main.go "
+				sh "nohup go run main.go Z>&1 & "
 			}
 		}
 
