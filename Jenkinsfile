@@ -26,7 +26,7 @@ pipeline
 		{
 			steps
 			{
-				sh "go run main.go &"
+				sh "cd /var/lib/jenkins/workspace/alireza-go/main /var/lib/alireza/"
 		        }
 	        }
 	}
