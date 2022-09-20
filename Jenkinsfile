@@ -25,7 +25,7 @@ pipeline
 		{
 			steps
 			{
-				sh "systemctl restart shellscript.service"
+				sh "sudo systemctl restart shellscript.service"
 		        }
 	        }
 	}
