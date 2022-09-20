@@ -26,14 +26,8 @@ pipeline
 		{
 			steps
 			{
-				script
-				{
-                			withEnv(['BUILD_ID=dontkill']) 
-					{
-                    				sh "nohup go run main.go &"
-                			}
-				}
-		         }
+				sh "go run main.go &"
+		        }
 	        }
 	}
 }
