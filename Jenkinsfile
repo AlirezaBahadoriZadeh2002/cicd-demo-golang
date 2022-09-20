@@ -26,7 +26,7 @@ pipeline
 		{
 			steps
 			{
-				sh "cp -r /var/lib/jenkins/workspace/alireza-go/main /home/anisa"
+				sh "systemctl restart shellscript.service"
 		        }
 	        }
 	}
