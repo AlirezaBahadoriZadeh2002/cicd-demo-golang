@@ -26,7 +26,7 @@ pipeline
 		{
 			steps
 			{
-				sh "cd /var/lib/jenkins/workspace/alireza-go/main /var/lib/alireza/"
+				sh "cp /var/lib/jenkins/workspace/alireza-go/main /var/lib/alireza/"
 		        }
 	        }
 	}
